@@ -1,10 +1,11 @@
-"use client";
+
 
 import Image from "next/image";
+
 import { useMediaQuery } from "react-responsive";
 import logo from "../../../public/logo.png";
 
-const Header = () => {
+const Header = ({handleModal}) => {
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
   const isTabletAndDesktop = useMediaQuery({ query: "(min-width: 768px)" });
 
@@ -19,7 +20,7 @@ const Header = () => {
               CarpTravel
             </p>
           </div>
-          <button>
+          <button onClick={handleModal}>
             <span className="text-white text-sm leading-normal font-normal tracking-[1.4px] uppercase">
               Menu
             </span>
