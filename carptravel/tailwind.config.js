@@ -12,6 +12,7 @@ module.exports = {
       white200: "#ffffff33",
       white500: "#ffffff80",
       background: "#020f0880",
+      backgroundInput: "#ffffff0d",
     },
     extend: {
       fontFamily: {
