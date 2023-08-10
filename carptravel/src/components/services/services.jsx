@@ -24,8 +24,6 @@ const Services = () => {
     setActiveOffer(active);
   }, [activeId]);
 
-  console.log(activeOffer);
-
   return (
     <div className=" bg-[url('../../public/Offer-Background1-mobile.jpg')]">
       <div className="pt-[54px] pb-[56px] px-[20px] ">

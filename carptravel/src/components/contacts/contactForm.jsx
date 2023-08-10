@@ -1,23 +1,68 @@
+"use client";
+
+import { useForm } from "react-hook-form";
+import { IncorrectIcon } from "../svgs/incorrect";
+
 const ContactForm = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    mode: "onBlur",
+    defaultValues: {
+      name: "",
+      email: "",
+    },
+  });
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
-    <form>
+    <form onSubmit={handleSubmit(onSubmit)}>
       <label
-        for="fname"
-        className="mb-[4px] text-[12px] font-extralight leading-[24px] tracking-[2.4px] text-white"
+        for="name"
+        className={
+          errors.name
+            ? "mb-[4px] text-[12px] font-extralight leading-[24px] tracking-[2.4px] text-incorrect"
+            : "mb-[4px] text-[12px] font-extralight leading-[24px] tracking-[2.4px] text-white"
+        }
       >
         Full name
       </label>
       <input
         type="text"
-        id="fname"
+        id="name"
         name="fullname"
         placeholder="John Smith"
-        className="block mb-[24px] bg-backgroundInput w-[280px] pl-[8px] placeholder:text-white200 placeholder:text-[13px] placeholder:font-extralight placeholder:leading-[24px] "
+        className={
+          errors.name
+            ? "text-incorrect text-[20px] font-[200], leading-[24px] block  bg-backgroundInput w-[280px] pl-[8px] placeholder:text-white200 placeholder:text-[13px] placeholder:font-[200] placeholder:leading-[24px] focus:border-none"
+            : "text-white text-[20px] font-[200], leading-[24px] block  bg-backgroundInput w-[280px] pl-[8px] placeholder:text-white200 placeholder:text-[13px] placeholder:font-[200] placeholder:leading-[24px]"
+        }
+        {...register("name", {
+          required: true,
+          pattern: /^[A-Za-z]+$/,
+        })}
       />
+      {errors.name && (
+        <div className="flex justify-end items-center gap-[4px]">
+          <IncorrectIcon className="w-[18px] h-[18px]" />
+          <p className="text-incorrect text-[12px] font-extralight leading-[24px] tracking-[2.4px]">
+            Incorrect name
+          </p>
+        </div>
+      )}
 
       <label
         for="email"
-        className="mb-[4px] text-[12px] font-extralight leading-[24px] tracking-[2.4px] text-white"
+        className={
+          errors.email
+            ? "mb-[4px] text-[12px] font-extralight leading-[24px] tracking-[2.4px] text-incorrect"
+            : "mb-[4px] text-[12px] font-extralight leading-[24px] tracking-[2.4px] text-white"
+        }
       >
         E-mail
       </label>
@@ -26,8 +71,25 @@ const ContactForm = () => {
         id="email"
         name="email"
         placeholder="johnsmith@email.com"
-        className="block mb-[24px] bg-backgroundInput w-[280px] pl-[8px] placeholder:text-white200 placeholder:text-[13px] placeholder:font-extralight placeholder:leading-[24px] "
+        className={
+          errors.email
+            ? "text-incorrect text-[20px] font-[200], leading-[24px] block  bg-backgroundInput w-[280px] pl-[8px] placeholder:text-white200 placeholder:text-[13px] placeholder:font-[200] placeholder:leading-[24px] focus:border-none"
+            : "text-white text-[20px] font-[200], leading-[24px] block  bg-backgroundInput w-[280px] pl-[8px] placeholder:text-white200 placeholder:text-[13px] placeholder:font-[200] placeholder:leading-[24px]"
+        }
+        {...register("email", {
+          required: true,
+          pattern:
+            /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+        })}
       />
+      {errors.email && (
+        <div className="flex justify-end items-center gap-[4px]">
+          <IncorrectIcon className="w-[18px] h-[18px]" />
+          <p className="text-incorrect text-[12px] font-extralight leading-[24px] tracking-[2.4px]">
+            Incorrect email
+          </p>
+        </div>
+      )}
 
       <label
         for="subject"
