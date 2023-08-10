@@ -2,7 +2,10 @@ import ContactForm from "./contactForm";
 
 const Contacts = () => {
   return (
-    <div className="bg-[url('../../public/Background-Contact-mobile.jpg')] pt-[56px] pb-[54px] px-[20px]">
+    <div
+      className="bg-[url('../../public/Background-Contact-mobile.jpg')] pt-[56px] pb-[54px] px-[20px]"
+      id="contacts"
+    >
       <h3 className="text-white text-[40px] font-thin leading-[56px] tracking-[-1.6px] uppercase pb-[36px]">
         Contact <span className="font-medium">us</span>
       </h3>

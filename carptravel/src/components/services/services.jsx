@@ -25,7 +25,10 @@ const Services = () => {
   }, [activeId]);
 
   return (
-    <div className=" bg-[url('../../public/Offer-Background1-mobile.jpg')]">
+    <div
+      className=" bg-[url('../../public/Offer-Background1-mobile.jpg')]"
+      id="services"
+    >
       <div className="pt-[54px] pb-[56px] px-[20px] ">
         <h3 className="text-white text-[40px] font-thin leading-[56px] tracking-[-1.6px] uppercase mb-[24px]">
           We <span className="font-medium">offer</span>

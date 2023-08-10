@@ -1,3 +1,5 @@
+import Navbar from "../navbar/navbar";
+
 const Modal = ({ handleModal }) => {
   return (
     <div className="absolute top-0 left-0 w-full  flex justify-center items-center bg-modalBackground backdrop-blur-[25px] z-10 ">
@@ -10,13 +12,7 @@ const Modal = ({ handleModal }) => {
             Close
           </span>
         </button>
-        <ul className="flex flex-col justify-center items-center gap-[48px] my-[170px] text-white text-[18px] font-normal tracking-[1.8px]">
-          <li className="h-[22px]">About</li>
-          <li className="h-[22px]">Services</li>
-          <li className="h-[22px]">Career</li>
-          <li className="h-[22px]">Gallery</li>
-          <li className="h-[22px]">Contacts</li>
-        </ul>
+        <Navbar handleModal={handleModal}/>
       </div>
     </div>
   );

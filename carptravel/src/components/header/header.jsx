@@ -1,11 +1,9 @@
-
-
 import Image from "next/image";
 
 import { useMediaQuery } from "react-responsive";
 import logo from "../../../public/logo.png";
 
-const Header = ({handleModal}) => {
+const Header = ({ handleModal }) => {
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
   const isTabletAndDesktop = useMediaQuery({ query: "(min-width: 768px)" });
 
