@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import { useMediaQuery } from "react-responsive";
 import logo from "../../../public/logo.png";
+import Navbar from "../navbar/navbar";
 
 const Header = ({ handleModal }) => {
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
@@ -12,7 +13,6 @@ const Header = ({ handleModal }) => {
       {isMobile ? (
         <div className="flex justify-between  py-9">
           <div>
-            {/* <img src={logo} alt="" width={60} height={20} /> */}
             <Image src={logo} width={60} height={20} alt="logo" />
             <p className="text-white font-Karantina text-sm leading-normal font-normal tracking-[2.59px] ">
               CarpTravel
@@ -25,8 +25,16 @@ const Header = ({ handleModal }) => {
           </button>
         </div>
       ) : (
-        <div>HeaderTablet</div>
-      )}{" "}
+        <div className="flex justify-between  py-9 md:py-0 md:pt-[24px] md:mb-[68px]">
+          <div>
+            <Image src={logo} width={60} height={20} alt="logo" />
+            <p className="text-white font-Karantina text-sm leading-normal font-normal tracking-[2.59px] ">
+              CarpTravel
+            </p>
+          </div>
+          <Navbar />
+        </div>
+      )}
     </>
   );
 };

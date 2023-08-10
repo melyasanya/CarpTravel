@@ -14,7 +14,7 @@ const Main = () => {
   };
 
   return (
-    <div className="bg-[url('../../public/Background-mobile.jpg')] h-full bg-no-repeat bg-cover px-5  pb-[56px]">
+    <div className="bg-[url('../../public/Background-mobile.jpg')] h-full bg-no-repeat bg-cover px-5  pb-[56px] md:bg-[url('../../public/Background-Hero-tablet.jpg')] md:pb-[64px] md:px-[32px]">
       {isModalOpen && <Modal handleModal={handleModal} />}
       <Header handleModal={handleModal} />
       <Hero />

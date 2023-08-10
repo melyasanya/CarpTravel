@@ -2,9 +2,9 @@ import { Link } from "react-scroll";
 
 const Navbar = ({ handleModal }) => {
   return (
-    <ul className="flex flex-col justify-center items-center gap-[48px] my-[170px] text-white text-[18px] font-normal tracking-[1.8px]">
-      <li className="h-[22px]">About</li>
-      <li className="h-[22px]">
+    <ul className="flex flex-col justify-center items-center gap-[48px] my-[170px] text-white text-[18px] font-normal tracking-[1.8px] md:flex-row md:gap-[24px] md:my-0 md:text-[14px] md:tracking-[1.4px]">
+      <li className="h-[22px] md:h-[17px]">About</li>
+      <li className="h-[22px] md:h-[17px]">
         <Link
           to="services"
           onClick={handleModal}
@@ -16,9 +16,9 @@ const Navbar = ({ handleModal }) => {
           Services
         </Link>
       </li>
-      <li className="h-[22px]">Career</li>
-      <li className="h-[22px]">Gallery</li>
-      <li className="h-[22px]">
+      <li className="h-[22px] md:h-[17px]">Career</li>
+      <li className="h-[22px] md:h-[17px]">Gallery</li>
+      <li className="h-[22px] md:h-[17px]">
         <Link
           to="contacts"
           onClick={handleModal}
