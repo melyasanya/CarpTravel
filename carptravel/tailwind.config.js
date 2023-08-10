@@ -19,6 +19,9 @@ module.exports = {
       fontFamily: {
         Karantina: "Karantina, sans-serif",
       },
+      screens: {
+        xl: "1440px",
+      },
     },
   },
   plugins: [],

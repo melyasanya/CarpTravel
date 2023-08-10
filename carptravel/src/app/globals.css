@@ -54,8 +54,8 @@ body {
 }
 /* desktop */
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
   .container {
-    width: 1280px;
+    width: 1440px;
   }
 }
