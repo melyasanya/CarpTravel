@@ -22,8 +22,8 @@ const CareerForm = () => {
   return (
     <div className="bg-[url('../../public/Background-Career-mobile.jpg')] bg-center h-auto bg-no-repeat bg-cover px-[20px] py-[56px] md:bg-none md:p-0 md:translate-y-[91px]">
       <p className="text-white text-[14px] font-extralight leading-[20px] w-[179px]  ml-auto mb-[24px] md:w-[221px] md:text-left md:text-[13px] md:ml-0">
-        Don't miss your opportunity! <br /> Fill out the form right now and join
-        our team!
+        Don&rsquo;t miss your opportunity! <br /> Fill out the form right now
+        and join our team!
       </p>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="md:flex md:gap-[20px] md:mb-[10px]">
