@@ -18,7 +18,7 @@ const Career = () => {
             Seeking talented professionals to share our common mission.
           </p>
         </div>
-        <div className="md:flex md:gap-[24px]">
+        <div className="md:flex md:gap-[24px] xl:justify-end">
           <div>
             <p className="text-white text-[30px] font-extralight leading-[1.15] uppercase ml-[100px] mb-[36px] md:ml-[80px] md:mb-[56px] md:w-[141px] xl:w-[170px] xl:text-[36px] xl:leading-[39px] xl:ml-[147px] xl:mb-[45px]">
               Why us &#63;
