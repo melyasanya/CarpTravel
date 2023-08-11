@@ -1,4 +1,5 @@
 import { useMediaQuery } from "react-responsive";
+import { Link } from "react-scroll";
 import {
   LeftBorderDesktop,
   LeftBorderMobile,
@@ -59,9 +60,16 @@ const Hero = () => {
               <LeftBorderDesktop className="absolute  md:w-[44px] md:h-[71px]" />
             )}
             <button className="w-full h-[53px] py-[18px] px-[64px] mt-[24px] bg-white bg-opacity-10  flex justify-center items-center md:mt-[28px] md:h-[50px] md:py-[14px] xl:h-[71px]">
-              <span className="text-white text-center text-[18px] font-bold leading-[48px] uppercase md:leading-[1.15] xl:text-[32px]">
+              <Link
+                to="contacts"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+                className="text-white text-center text-[18px] font-bold leading-[48px] uppercase md:leading-[1.15] xl:text-[32px]"
+              >
                 Join now
-              </span>
+              </Link>
             </button>
             {isMobile && (
               <RightBorderMobile className="absolute w-[42px] h-[53px] top-0 right-0" />
