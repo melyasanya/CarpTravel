@@ -27,7 +27,7 @@ const Services = () => {
   useEffect(() => {
     const active = offers.find((el) => el.id === activeId);
     setActiveOffer(active);
-  }, [activeId]);
+  }, [activeId, offers]);
 
   return (
     <div
@@ -69,7 +69,7 @@ const Services = () => {
               </p>
             )}
             <div className="flex flex-col justify-between h-[320px] xl:flex-row xl:flex-wrap ">
-              <ul className="text-white500 text-[20px] font-extralight leading-[17px] uppercase flex flex-col gap-[16px] md:text-[22px] md:leading-[18px] md:mb-[24px] xl:text-[28px] xl:leading-[24px]">
+              <ul className="text-white500 text-[20px] font-extralight leading-[17px] uppercase flex flex-col gap-[16px] md:text-[22px] md:leading-[18px] md:mb-[24px] xl:text-[28px] xl:leading-[24px]  xl:w-[312px]">
                 <li className="flex items-center justify-start gap-[8px]">
                   {!activeOffer ? (
                     <DiamondIcon />
@@ -153,13 +153,13 @@ const Services = () => {
               </ul>
 
               {isTabletAndDesktop && (
-                <p className="text-white text-right text-[12px] font-extralight leading-[24px] tracking-[2.4px] mb-[24px] md:mb-[34px] md:text-left xl:mr-[105px] ">
+                <p className="text-white text-right text-[12px] font-extralight leading-[24px] tracking-[2.4px] mb-[24px] md:mb-[34px] md:text-left xl:mr-auto ">
                   {activeOffer
                     ? activeOffer.slogan
                     : "Feel the adrenaline rush"}
                 </p>
               )}
-              <p className="text-white text-[14px] font-extralight leading-[20px] md:text-[13px] xl:w-[293px]  xl:text-justify xl:h-[168px] xl:ml-auto xl:text-[18px] xl:leading-[24px]">
+              <p className="text-white text-[14px] font-extralight leading-[20px] md:text-[13px] xl:w-[293px]  xl:text-justify xl:h-[168px] xl:ml-auto xl:text-[18px] xl:leading-[24px] xl:flex xl:items-end">
                 {activeOffer
                   ? activeOffer.description
                   : "Join exciting rafting expeditions on the waterways of the Carpathians. Go through challenging waterways and overcome gusty waves, feel the adrenaline, and enjoy the incredible views of the surrounding mountains."}

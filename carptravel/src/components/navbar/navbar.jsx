@@ -17,7 +17,18 @@ const Navbar = ({ handleModal }) => {
         </Link>
       </li>
       <li className="h-[22px] md:h-[17px]">Career</li>
-      <li className="h-[22px] md:h-[17px]">Gallery</li>
+      <li className="h-[22px] md:h-[17px]">
+        <Link
+          to="gallery"
+          onClick={handleModal}
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+        >
+          Gallery
+        </Link>
+      </li>
       <li className="h-[22px] md:h-[17px]">
         <Link
           to="contacts"

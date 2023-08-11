@@ -22,7 +22,7 @@ const ContactForm = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <div className="md:flex md:gap-[20px] xl:flex-col">
+      <div className="md:flex md:gap-[20px] xl:flex-col xl:gap-0">
         <div className="xl:flex xl:gap-[20px]">
           <div className={errors.name ? "md:mb-[4px]" : "md:mb-[28px]"}>
             <label
@@ -98,7 +98,7 @@ const ContactForm = () => {
         </div>
         <div
           className={
-            errors.name || errors.email ? "xl:mt-[16px]" : "xl:mt-[40px]"
+            errors.name || errors.email ? "xl:mt-[16px]" : "xl:mt-[16px]"
           }
         >
           <label
@@ -110,7 +110,7 @@ const ContactForm = () => {
           <textarea
             id="subject"
             name="subject"
-            className="w-[280px] h-[192px] block bg-backgroundInput mb-[16px] md:w-[463px] xl:w-[607px] xl:h-[174px]"
+            className="w-[280px] h-[192px] block bg-backgroundInput mb-[16px] md:w-[463px] xl:w-[607px] xl:h-[174px] xl:mb-[24px]"
           ></textarea>
         </div>
       </div>

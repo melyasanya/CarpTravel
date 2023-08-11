@@ -31,7 +31,7 @@ const Hero = () => {
         <div className="mt-[24px] md:mt-0">
           <h2 className="text-white text-[40px] font-thin leading-[56px] tracking-[-1.6px] uppercase md:text-[67px] md:leading-[1.15] md:tracking-[-2.68px] xl:text-[98px] xl:tracking-[-3.92px]">
             <span className="font-medium">Uncover</span>
-            <br /> Carpathian's <br />
+            <br /> Carpathian&apos;s <br />
             Secret
           </h2>
         </div>
