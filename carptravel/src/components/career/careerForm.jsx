@@ -27,7 +27,7 @@ const CareerForm = () => {
       </p>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="md:flex md:gap-[20px] md:mb-[10px]">
-          <div className="xl:flex xl:gap-[20px]">
+          <div className="">
             <div className="mb-[16px] relative">
               <label
                 for="name"
@@ -46,8 +46,8 @@ const CareerForm = () => {
                 placeholder="John Smith"
                 className={
                   errors.name
-                    ? "text-incorrect text-[13px] font-extralight, leading-[24px] block  bg-backgroundInput w-[280px] pl-[8px] placeholder:text-white200 placeholder:text-[13px] placeholder:font-[200] placeholder:leading-[24px] focus:border-none md:w-[221px] xl:w-[293px]"
-                    : "text-white text-[13px] font-extralight, leading-[24px] block  bg-backgroundInput w-[280px] pl-[8px] placeholder:text-white200 placeholder:text-[13px] placeholder:font-[200] placeholder:leading-[24px] md:w-[221px] xl:w-[293px]"
+                    ? "text-incorrect text-[13px] font-extralight, leading-[24px] block  bg-backgroundInput w-[280px] pl-[8px] placeholder:text-white200 placeholder:text-[13px] placeholder:font-[200] placeholder:leading-[24px] focus:border-none md:w-[221px] xl:w-[290px]"
+                    : "text-white text-[13px] font-extralight, leading-[24px] block  bg-backgroundInput w-[280px] pl-[8px] placeholder:text-white200 placeholder:text-[13px] placeholder:font-[200] placeholder:leading-[24px] md:w-[221px] xl:w-[290px]"
                 }
                 {...register("name", {
                   required: true,
@@ -81,8 +81,8 @@ const CareerForm = () => {
                 placeholder="johnsmith@email.com"
                 className={
                   errors.email
-                    ? "text-incorrect text-[13px] font-[200], leading-[24px] block  bg-backgroundInput w-[280px] pl-[8px] placeholder:text-white200 placeholder:text-[13px] placeholder:font-[200] placeholder:leading-[24px] focus:border-none md:w-[221px] xl:w-[293px]"
-                    : "text-white text-[13px] font-[200], leading-[24px] block  bg-backgroundInput w-[280px] pl-[8px] placeholder:text-white200 placeholder:text-[13px] placeholder:font-[200] placeholder:leading-[24px] md:w-[221px] xl:w-[293px]"
+                    ? "text-incorrect text-[13px] font-[200], leading-[24px] block  bg-backgroundInput w-[280px] pl-[8px] placeholder:text-white200 placeholder:text-[13px] placeholder:font-[200] placeholder:leading-[24px] focus:border-none md:w-[221px] xl:w-[290px]"
+                    : "text-white text-[13px] font-[200], leading-[24px] block  bg-backgroundInput w-[280px] pl-[8px] placeholder:text-white200 placeholder:text-[13px] placeholder:font-[200] placeholder:leading-[24px] md:w-[221px] xl:w-[290px]"
                 }
                 {...register("email", {
                   required: true,
@@ -111,7 +111,7 @@ const CareerForm = () => {
                 id="position"
                 name="position"
                 placeholder="Movie maker"
-                className="text-white text-[13px] font-extralight, leading-[24px] block  bg-backgroundInput w-[280px] pl-[8px] placeholder:text-white200 placeholder:text-[13px] placeholder:font-[200] placeholder:leading-[24px] md:w-[221px] xl:w-[293px]"
+                className="text-white text-[13px] font-extralight, leading-[24px] block  bg-backgroundInput w-[280px] pl-[8px] placeholder:text-white200 placeholder:text-[13px] placeholder:font-[200] placeholder:leading-[24px] md:w-[221px] xl:w-[290px]"
                 {...register("position", {
                   required: false,
                   pattern: /^[A-Za-z]+$/,
@@ -136,8 +136,8 @@ const CareerForm = () => {
                 placeholder="+ 38 (097) 12 34 567"
                 className={
                   errors.phone
-                    ? "text-incorrect text-[13px] font-extralight, leading-[24px] block  bg-backgroundInput w-[280px] pl-[8px] placeholder:text-white200 placeholder:text-[13px] placeholder:font-[200] placeholder:leading-[24px] focus:border-none md:w-[221px] xl:w-[293px]"
-                    : "text-white text-[13px] font-extralight, leading-[24px] block  bg-backgroundInput w-[280px] pl-[8px] placeholder:text-white200 placeholder:text-[13px] placeholder:font-[200] placeholder:leading-[24px] md:w-[221px] xl:w-[293px]"
+                    ? "text-incorrect text-[13px] font-extralight, leading-[24px] block  bg-backgroundInput w-[280px] pl-[8px] placeholder:text-white200 placeholder:text-[13px] placeholder:font-[200] placeholder:leading-[24px] focus:border-none md:w-[221px] xl:w-[290px]"
+                    : "text-white text-[13px] font-extralight, leading-[24px] block  bg-backgroundInput w-[280px] pl-[8px] placeholder:text-white200 placeholder:text-[13px] placeholder:font-[200] placeholder:leading-[24px] md:w-[221px] xl:w-[290px]"
                 }
                 {...register("phone", {
                   required: true,
@@ -165,7 +165,7 @@ const CareerForm = () => {
             <textarea
               id="subject"
               name="subject"
-              className="w-[280px] h-[192px] block bg-backgroundInput mb-[16px] md:w-[221px] md:h-[228px] md:mb-0 xl:w-[607px] xl:h-[174px] xl:mb-[24px]"
+              className="w-[280px] h-[192px] block bg-backgroundInput mb-[16px] md:w-[221px] md:h-[228px] md:mb-0 xl:w-[292px] xl:h-[268px] xl:mb-[24px]"
             ></textarea>
           </div>
         </div>
