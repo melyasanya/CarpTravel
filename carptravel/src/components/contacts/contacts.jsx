@@ -43,7 +43,7 @@ const Contacts = () => {
               <li>
                 <a
                   href="https://uk-ua.facebook.com/"
-                  className="text-white text-[14px] font-normal leading-[24px] md:text-[16px] xl:text-[18px]"
+                  className="text-white text-[14px] font-normal leading-[24px] md:text-[16px] xl:text-[18px] hover:underline"
                 >
                   facebook
                 </a>
@@ -51,7 +51,7 @@ const Contacts = () => {
               <li>
                 <a
                   href="https://www.instagram.com/"
-                  className="text-white text-[14px] font-normal leading-[24px] md:text-[16px] xl:text-[18px]"
+                  className="text-white text-[14px] font-normal leading-[24px] md:text-[16px] xl:text-[18px] hover:underline"
                 >
                   instagram
                 </a>
@@ -59,7 +59,7 @@ const Contacts = () => {
               <li>
                 <a
                   href="https://www.youtube.com/"
-                  className="text-white text-[14px] font-normal leading-[24px] md:text-[16px] xl:text-[18px]"
+                  className="text-white text-[14px] font-normal leading-[24px] md:text-[16px] xl:text-[18px] hover:underline"
                 >
                   youtube
                 </a>
@@ -67,7 +67,7 @@ const Contacts = () => {
               <li>
                 <a
                   href="https://www.tiktok.com/uk-UA/"
-                  className="text-white text-[14px] font-normal leading-[24px] md:text-[16px] xl:text-[18px]"
+                  className="text-white text-[14px] font-normal leading-[24px] md:text-[16px] xl:text-[18px] hover:underline"
                 >
                   tiktok
                 </a>

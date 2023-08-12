@@ -59,7 +59,7 @@ const Hero = () => {
             {isDesktop && (
               <LeftBorderDesktop className="absolute  md:w-[44px] md:h-[71px]" />
             )}
-            <button className="w-full h-[53px] py-[18px] px-[64px] mt-[24px] bg-white bg-opacity-10  flex justify-center items-center md:mt-[28px] md:h-[50px] md:py-[14px] xl:h-[71px]">
+            <button className="w-full h-[53px] py-[18px] px-[64px] mt-[24px] bg-white bg-opacity-10  flex justify-center items-center md:mt-[28px] md:h-[50px] md:py-[14px] xl:h-[71px] hover:bg-white200 ">
               <Link
                 to="contacts"
                 spy={true}
